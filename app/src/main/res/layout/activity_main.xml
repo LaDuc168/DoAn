@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.minh.doan.MainActivity">
+
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ViewFlipper
+                    android:id="@+id/view_flipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#ffffff">
+
+                </ViewFlipper>
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Lựa chọn của bạn"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/checkboxdiadiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Địa điểm"
+                    android:textColor="#00a680"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/checkboxmonan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Món ăn"
+                    android:textColor="#00a680"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <EditText
+                        android:id="@+id/edtTimKiem"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="10"
+                        android:background="@drawable/custom_edittext"
+                        android:hint="Mời vào giá trị cần tìm..." />
+
+                    <ImageView
+                        android:id="@+id/imgreset"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0"
+                        android:src="@drawable/giohang"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnTimKiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="35dp"
+                    android:background="#ffcc00"
+                    android:text="Tìm kiếm" />
+
+                <ImageView
+                    android:id="@+id/imgKetQua"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/muiten"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtKetQuaTimKiem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="Kết quả tìm kiếm"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleViewTimKiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginTop="35dp"
+                    android:background="#969595"
+                    android:visibility="gone">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="60dp"
+                    android:background="#ccccc9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="Danh sách các nhà hàng"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginTop="35dp"
+                    android:background="#969595">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+
+            </TableLayout>
+        </ScrollView>
+
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#fff"
+            app:headerLayout="@layout/header"
+            app:itemTextColor="@color/colorPrimaryDark"
+            app:menu="@menu/menu_navigation">
+
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_trangchu"
+            android:icon="@drawable/home_ok"
+            android:title="Trang chủ" />
+
+        <item
+            android:id="@+id/nap_monan"
+            android:icon="@drawable/map"
+            android:title="Danh sách món ăn" />
+        <item
+            android:id="@+id/nav_nhahang"
+            android:icon="@drawable/time"
+            android:title="Danh sách nhà hàng" />
+    </group>
+
+    <item android:title="Liên hệ">
+        <menu>
+            <item
+                android:id="@+id/nav_thongtinungdung"
+                android:icon="@drawable/map"
+                android:title="Thông tin ứng dụng" />
+
+        </menu>
+    </item>
+
+</menu>

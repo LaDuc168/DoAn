@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:weightSum="20"
+    android:orientation="vertical"
+    tools:context="com.example.minh.doan.activity.ChiTietMonAnActivity">
+
+    <ScrollView
+        android:layout_weight="18"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgHinh"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ga" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên món"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txttenmon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Thời gian bắt đầu" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mô tả"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtmota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Thời gian bắt đầu" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đơn giá"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtdongia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Danh sách loại món ăn" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại món ăn"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtloaimon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Danh sách loại món ăn" />
+
+
+            <!--bình luận-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="#efefec" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:text="Bình luận"
+                android:textStyle="bold"
+                android:id="@+id/txtbinhluan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:dividerHeight="25dp"
+                android:divider="#ffffff"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:id="@+id/listViewBinhLuan"
+                android:layout_height="400dp"></ListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#efefec" />
+
+            <TextView
+                android:id="@+id/txtbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Nhập bình luận" />
+
+            <EditText
+                android:id="@+id/edtnhapbinhluan"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/custom_edittext"
+                />
+            <Button
+                android:text="Gửi"
+                android:textStyle="bold"
+                android:id="@+id/btnguibl"
+                android:background="#00a680"
+                android:textColor="#FFF"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+        </TableLayout>
+    </ScrollView>
+    <Button
+        android:layout_weight="2"
+
+        android:id="@+id/btnDatHang"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffcc00"
+        android:text="Thêm vào giỏ hàng" />
+</LinearLayout>

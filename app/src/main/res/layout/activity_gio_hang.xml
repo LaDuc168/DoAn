@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.minh.doan.activity.GioHangActivity">
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:id="@+id/txtTK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="DANH SÁCH ĐƠN HÀNG"
+        android:textColor="#00a680"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:id="@+id/txtTongTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#d70d0a"
+        android:layout_marginTop="10dp"
+        android:text="Tổng tiền:" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_weight="18"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:background="#969595">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <Button
+            android:layout_weight="2"
+
+            android:id="@+id/btnThanhToan"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="0dp"
+            android:background="#00a680"
+            android:text="Thanh toán đơn hàng" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
